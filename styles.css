@@ -1,0 +1,211 @@
+/* Root Variables */
+:root {
+  --background-color: #005C5F;
+  --primary-color: #FFCD00;
+  --code-background-color: #267A7A;
+  --code-text-color: #E0E0E0;
+  --text-color-light: #FFFFFF;
+  --text-color-dark: #000000;
+  --highlight-color: #FF5733;
+  --font-heading: Helvetica, sans-serif;
+  --font-body: Roboto, sans-serif;
+  --font-size: 16px;
+  --padding-regular: 16px;
+  --padding-large: 24px;
+}
+
+/* Resetting */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color-light);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  max-width: 100%;
+  margin: auto;
+}
+
+/* 'Code' Styling */
+code {
+  background-color: var(--code-background-color);
+  color: var(--code-text-color);
+  padding: 2px 6px;
+  border-radius: 6px;
+  vertical-align: middle;
+  font-size: 0.8rem;
+}
+
+pre > code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+pre {
+  background-color: var(--code-background-color);
+  padding: 2px 6px;
+  border-radius: 6px;
+  margin: 8px 0;
+}
+
+/* Header Styling */
+#title, #subtitle {
+  text-align: left;
+  padding: 0 10px;
+  padding-top: 10px;
+}
+
+#title {
+  font-size: 2.5rem;
+  font-family: var(--font-heading);
+  line-height: 1.2;
+}
+
+#subtitle {
+  font-size: 1.4rem;
+  font-family: var(--font-heading);
+  padding-top: 0px;
+  padding-bottom: 10px;
+  line-height: 1.4;
+  font-weight: normal;
+}
+
+.lego {
+  color: var(--text-color-light);
+  background-color: var(--highlight-color);
+  padding: 1px 5px;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+/* Navbar Styling */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  min-width: 290px;
+  height: 100%;
+  border-right:  2px solid;
+  background-color: var(--primary-color);
+  color: var(--text-color-dark);
+}
+
+#nav-list {
+  list-style: none;
+  font-family: var(--font-body);
+}
+
+#navbar li {
+  border-top: 1px solid;
+  padding: 4px 10px;
+}
+
+#navbar li a {
+  font-size: 1.1rem
+}
+
+#navbar #nav-list:last-of-type {
+  border-bottom: 1px solid;
+}
+
+.nav-link {
+  color: var(--text-color-dark);
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.nav-link:visited {
+  color: var(--text-color);
+}
+
+.nav-link:hover {
+  font-weight: bold;
+}
+
+/* Main Doc Styling */
+#main-doc {
+  position: static;
+  margin-left: 300px;
+  margin-right: var(--padding-regular);
+  padding-left: var(--padding-regular);
+  padding-top: var(--padding-large);
+  padding-bottom: var(--padding-large);
+}
+
+.main-section {
+  border-left: 3px solid;
+  border-color: var(--highlight-color);
+  margin: var(--padding-large) 0;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.main-section:first-of-type {
+  margin-top: 0;
+}
+
+.main-section:last-of-type {
+  margin-bottom: 0;
+}
+
+.main-section header {
+  font-size: 1.8rem;
+  font-family: var(--font-heading);
+  letter-spacing: 2px;
+}
+
+.main-section ul {
+  padding-left: 20px;
+}
+
+/* Different Screen Sizes */
+@media (max-width: 1023px) {
+  #navbar {
+    display: none;
+  }
+  #main-doc {
+    margin: auto;
+    padding: 16px 12px;
+  }
+}
+/* Medium Screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  #main-doc {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Small Screens */
+@media (max-width: 767px) {
+  body {
+    font-size: 0.85rem;
+  }
+
+  #main-doc {
+    max-width: 90%;
+    padding: 1rem;
+  }
+
+  .main-section {
+    padding: 0 1rem;
+  }
+
+  pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+}
