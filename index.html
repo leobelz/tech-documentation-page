@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Basic HTML Documentation but explained in Lego">
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML Documentation</title>  
+  </head>
+  <body>
+    <nav id="navbar">
+      <header id="title">HTML Documentation</header>
+      <h2 id="subtitle">But Explained in <span class="lego">LEGO</span></h2>
+      <ul id="nav-list">
+        <li><a class="nav-link" href="#What_is_HTML">What is HTML</a></li>
+        <li><a class="nav-link" href="#HTML_Structure">HTML Structure</a></li>
+        <li><a class="nav-link" href="#Elements_and_Tags">Elements and Tags</a></li>
+        <li><a class="nav-link" href="#HTML_Titles_and_Headings">HTML Titles and Headings</a></li>
+        <li><a class="nav-link" href="#Paragraphs_and_Text_Blocks">Paragraphs and Text Blocks</a></li>
+        <li><a class="nav-link" href="#Links_and_Navigation">Links and Navigation</a></li>
+        <li><a class="nav-link" href="#Adding_Images">Adding Images</a></li>
+        <li><a class="nav-link" href="#Lists:_Ordered_and_Unordered">Lists: Ordered and Unordered</a></li>
+        <li><a class="nav-link" href="#HTML_Attributes">HTML Attributes</a></li>
+        <li><a class="nav-link" href="#Formatting_Text_in_HTML">Formatting Text in HTML</a></li>
+        <li><a class="nav-link" href="#Tables_for_Structured_Data">Tables for Structured Data</a></li>
+        <li><a class="nav-link" href="#Forms_and_Input_Fields">Forms and Input Fields</a></li>
+        <li><a class="nav-link" href="#Semantic_HTML">Semantic HTML</a></li>
+        <li><a class="nav-link" href="#Why_HTML_Matters">Why HTML Matters</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="What_is_HTML">
+        <header>What is HTML</header>
+        <p>HTML (HyperText Markup Language) is like the instruction manual for building a website, where each element is a unique Lego piece with a role in the structure. Just like a Lego set uses blocks of different shapes and colors to build castles, spaceships, or cities, HTML uses tags to construct and organize content on a webpage.</p>
+      </section>
+      <section class="main-section" id="HTML_Structure">
+        <header>HTML Structure</header>
+        <article>
+          <p>Imagine this as the foundation or the baseplate for a Lego set. Every HTML page starts with this basic structure:</p>
+          <pre><code aria-label="HTML example of a basic structure">&lt!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My Web Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- Your content goes here --&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          
+          <p>Each part is like a section of your Lego project:</p>
+          <ul>
+            <li><code>&lt;!DOCTYPE html&gt;</code> is like the set number on a Lego box. It tells the browser (or "builder") which version of HTML it’s working with.</li>
+            <li><code>&lt;html&gt;</code> is the overall container, like the base box holding all the Lego pieces together.</li>
+            <li><code>&lt;head&gt;</code> is similar to the instruction booklet, providing extra details and instructions like the page's title that you might not see directly.</li>
+            <li><code>&lt;body&gt;</code> is the main area where all the visible "Lego bricks" go.</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Elements_and_Tags">
+        <header>Elements and Tags</header>
+        <article>
+          <p>Elements are like Lego bricks, and tags are the shapes that determine each brick’s role. To create a paragraph, you use the <code>&lt;p&gt;</code> tag, much like how you’d pick a specific brick for a wall in a Lego Harry Potter castle:</p>
+          <pre><code aria-label="HTML example of a paragraph element">&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+          <p>In this instance, the tags <code>&lt;p&gt;</code> and <code>&lt;/p&gt;</code> make up a singular Lego brick that tells the browser this brick is a paragraph.</p>
+        </article>
+      </section>
+      <section class="main-section" id="HTML_Titles_and_Headings">
+        <header>HTML Titles and Headings</header>
+        <article>
+          <p>Headings are like signs in a Lego set that label each room or area. Imagine you’re building Hogwarts with a big banner at the top labeled "Great Hall." HTML headings range from <code>&lt;h1&gt;</code> (a large banner like “Hogwarts”) to <code>&lt;h6&gt;</code> (smaller labels, like “Potions Classroom”). They organize the sections of your page:</p>
+          <pre><code aria-label="HTML example of heading usage">&lt;h1&gt;Main Title&lt;/h1&gt;
+&lt;h2&gt;Subsection Title&lt;/h2&gt;</code></pre>
+        </article>
+      </section>
+      <section class="main-section" id="Paragraphs_and_Text_Blocks">
+        <header>Paragraphs and Text Blocks</header>
+        <article>
+          <p>A paragraph groups together a chunk of text, like building separate rooms or areas in the Lego Star Wars Millennium Falcon set. Using the <code>&lt;p&gt;</code> tag keeps ideas organized and distinct, just like how each section of the Falcon has its own purpose—such as the cockpit, crew quarters, and main hold—each adding to the overall structure of the ship:</p>
+          <pre><code aria-label="HTML example of using paragraph tags">&lt;p&gt;This is a paragraph of text that helps keep information and ideas separated.&lt;/p&gt;</code></pre>
+        </article>
+      </section>
+      <section class="main-section" id="Links_and_Navigation">
+        <header>Links and Navigation</header>
+        <article>
+          <p>Links are like secret doors between Lego buildings! Just as you can help your troops of Lego Knights invade a fort of Orcs and Goblins with a bridge, links can bring your users to different pages. The <code>&lt;a&gt;</code> tag with an <code>href</code> attribute is like a bridge that takes you somewhere new:</p>
+          <pre><code aria-label="HTML example of using links with anchor tags">&lt;a href="https://www.example-link.com"&gt;Click here to visit Example&lt;/a&gt;</code></pre>
+          <p>This creates a link that says "Click here to visit Example" that users can click to go to your desired location. 
+        </article>
+      </section>
+      <section class="main-section" id="Adding_Images">
+        <header>Adding Images</header>
+        <article>
+          <p>Images are like stickers you can put on your Lego build. You use the <code>&lt;img&gt;</code> tag to "stick" an image onto your page. The <code>src</code> attribute is where the sticker originates from, and <code>alt</code> is like a description of the image:</p>
+          <pre><code aria-label="HTML example of using image tags">&lt;img src="lego-car.jpg" alt="A nice lego car"&gt;</code></pre>
+          <p>Using <code>alt</code> text is like adding a label to your stickers, helping others understand the picture if it doesn't show up.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Lists:_Ordered_and_Unordered">
+        <header>Lists: Ordered and Unordered</header>
+        <article>
+          <p>Lists are like stacks of Lego pieces organised in order. You can make:</p>
+          <ul>
+            <li>Unordered lists (<code>&lt;ul&gt;</code>) that use bullet points.
+            <li>Ordered lists (<code>&lt;ol&gt;</code>) that use numbers.
+          </ul>
+          <p>Each list item is like a separate brick that stacks in a line:</p>
+          <pre><code aria-label="HTML example of how lists are written">&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+  &lt;li&gt;Item 4&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        </article>
+      </section>
+      <section class="main-section" id="HTML_Attributes">
+        <header>HTML Attributes</header>
+        <article>
+          <p>Attributes are like the special features or stickers you can add to a Lego brick. They give extra details about an element. A few examples are as follows:</p>
+          <ul>
+            <li><code>href</code> tells a link where to go.</li>
+            <li><code>src</code> tells an image where the picture is stored.</li>
+            <li><code>alt</code> describes the image.</li>
+          </ul>
+          <p>Think of these as “power-ups” that add functionality or instructions to each piece, similar to adding a propeller on a Lego City helicopter that actually spins.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Formatting_Text_in_HTML">
+        <header>Formatting Text in HTML</header>
+        <article>
+          <p>Similar to how you can customize Lego figures to have different clothes and accessories, HTML tags can change how text appears:</p>
+          <ul>
+            <li><b>Bold</b> (<code>&lt;b&gt;</code> or <code>&lt;strong&gt;</code>) makes text stand out.</li>
+            <li><i>Italic</i> (<code>&lt;i&gt;</code> or <code>&lt;em&gt;</code>) emphasizes text.</li>
+            <li><u>Underline</u> (<code>&lt;u&gt;</code>) puts a line under text.</li>
+          </ul>
+          <p>Example:</p>
+            <pre><code aria-label="HTML example of ways to decorate text">&lt;p&gt;This is &lt;b&gt;bold&lt;/b&gt;, &lt;i&gt;italic&lt;/i&gt;, and &lt;u&gt;underlined&lt;/u&gt; text.&lt;/p&gt;</code></pre>
+            <p>The example code will read as "This is <b>bold</b>, <i>italic</i>, and <u>underlined</u> text."</p>
+            <p>Note however, text formatting is more typically handled in Cascading Style Sheets (CSS) rather than HTML.</p>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Tables_for_Structured_Data">
+        <header>Tables for Structured Data</header>
+        <article>
+          <p>Tables are important for organizing information in rows and columns. The following elements are applicable when working with tables:</p>
+          <ul>
+            <li><code>&lt;table&gt;</code> starts the table structure.</li>
+            <li><code>&lt;tr&gt;</code> adds a new row.</li>
+            <li><code>&lt;th&gt;</code> adds a header cell (label).</li>
+            <li><code>&lt;td&gt;</code> adds a a regular data cell.</li>
+          </ul>
+          <p>Example:</p>
+          <pre><code aria-label="HTML example of how tables are written">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Fruit&lt;/th&gt;
+    &lt;th&gt;Color&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Apple&lt;/td&gt;
+    &lt;td&gt;Red&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+          <p>The same way you would sort tools in a Lego workshop, tables serve as an easy way to organise data.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Forms_and_Input_Fields">
+        <header>Forms and Input Fields</header>
+        <article>
+          <p>To gather user opinions on a particular subject you will need to use forms to collect this data, like how Google Reviews have enabled enjoyers of The Lego Batman Movie to report a rating of 4.8 stars out of 5. A form can include:</p>
+          <ul>
+            <li><code>&lt;/form&gt;</code> wraps all of a form's elements.</li>
+            <li><code>&lt;/input&gt;</code> creates single-line text boxes for a user to write in.</li>
+            <li><code>&lt;/textarea&gt;</code> creates larger boxes when longer text may be required from a user.</li>
+          </ul>
+            <p>Example:</p>
+            <pre><code aria-label="HTML example of a form">&lt;form&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;
+&lt;/form&gt;</code></pre>
+        </article>
+      </section>
+      <section class="main-section" id="Semantic_HTML">
+        <header>Semantic HTML</header>
+        <article>
+          <p>Semantic HTML is like using different colors to make Lego city sections easily identifiable - red for fire stations, blue for police, etc. Using tags as listed below helps organise the page:</p>
+          <ul>
+            <li><code>&lt;header&gt;</code> represents the introductory section of a webpage. It typically contains important information such as the title, logo, navigation links, or introductory content relevant to that section.</li>
+            <li><code>&lt;footer&gt;</code> is found at the bottom of a webpage. It usually includes concluding information, like copyright details, contact information, or links to related resources. It provides closure and additional reference material for the user.</li>
+            <li><code>&lt;section&gt;</code> elements are used to group related content together within a webpage. Each section represents a distinct thematic grouping, helping to organize content logically. This makes it easier for both users and search engines to understand and navigate the page’s structure.</li>
+            <li><code>&lt;article&gt;</code> elements are used for self-contained content that could stand on its own, like a news article, blog post, or product description.</li>
+          </ul>
+          <p>Using Semantic HTML makes your page easier to navigate and understand.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Why_HTML_Matters">
+        <header>Why HTML Matters</header>
+        <p>HTML is the foundation of every webpage. Understanding HTML allows you to structure and organize content effectively, making it accessible and readable for both users and search engines. Mastering HTML is essential for anyone interested in web development, as it provides the basic building blocks that allow for styling with CSS and adding interactivity with JavaScript. With a solid grasp of HTML, you gain the tools to create clear, functional web pages that service as the core of the modern internet.</p>
+      </section>
+    </main>
+  </body>
+</html>
